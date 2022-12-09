@@ -1,0 +1,140 @@
+body {
+  background: #131518;
+  height: 100%;
+  font-family: 'Overpass';
+  color: #FFFFFF;
+}
+.step-container {
+  display:flex;
+  flex-direction: column;
+  gap:28px;
+}
+
+.mask {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width:100vw;
+  height:100vh;
+}
+
+.modal h3 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35px;
+}
+
+.modal p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color:#969FAD
+}
+
+.modal ul {
+  display:flex;
+  gap:31px;
+}
+
+.modal ul li {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  background: #262E38;
+  width: 51px;
+  height: 51px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+
+.modal ul li a {
+    color: #7C8798;
+    text-decoration: none;
+}
+
+.modal ul li a:hover {
+  color:#FFF;
+}
+
+.modal ul li:hover, 
+li.active {
+  background:#FC7614 !important;
+  color:#FFF !important;
+  transition: background-color 0.1s ease-in;
+}
+
+.active a {
+  color:#FFF !important;
+}
+
+.modal button {
+  display:block;
+  background: #FC7614;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 2px;
+  width:100%;
+  background: #FC7614;
+  padding-top:13px;
+  padding-bottom:13px;
+  border:none;
+  border-radius: 22.5px;
+  display:inline-flex;
+  justify-content: center;
+  color: #FFFFFF;
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.modal button:hover {
+  background:#FFF;
+  cursor: pointer;
+  color: #FC7614;
+}
+
+.modal {
+  background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+  border-radius: 30px;
+  padding-top:32px;
+  width: 380px;
+  padding: 32px;
+}
+
+.step-2 {
+ align-items:center;
+}
+
+.step-2 p.selection {
+  color: #FC7614;
+background: #262E38;
+border-radius: 22.5px;
+  width:200px;
+  padding-top:4px;
+  padding-left:20px;
+  padding-right:20px;
+  line-height:25px;
+  width:193px;
+}
+
+.step-2 p {
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+}
+

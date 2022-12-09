@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
+</head>
+
+<body>
+  <div style="display:none" class="mask">
+    <div class="modal">
+      <div class="container">
+        <div class="step-container step-1">
+          <i><img alt="" src="./img/icon-star.svg" /></i>
+
+          <h3>How did we do?</h3>
+
+          <p>Please let us know how we did with your support request. All feedback is appreciated to help us
+            improve our
+            offering!</p>
+
+          <ul>
+            <li><a data-rating="1" href="#">1</a></li>
+            <li><a data-rating="2" href="#">2</a></li>
+            <li><a data-rating="3" href="#">3</a></li>
+            <li><a data-rating="4" href="#">4</a></li>
+            <li><a data-rating="5" href="#">5</a></li>
+          </ul>
+          <button class="submit-rating">Submit</button>
+        </div>
+        <div style="display:none;" class="step-container step-2">
+          <i>
+            <img src="img/illustration-thank-you.svg" alt="" />
+          </i>
+
+          <p class="selection">You selected <span class="score">4</span> out of 5</p>
+          <h3>Thank you!</h3>
+
+          <p>Please let us know how we did with your support request. All feedback is appreciated to help us
+            improve our offering!</p>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+
+    const toggleStep = () => {
+      document.getElementsByClassName('step-1')[0].style.display = "none";
+      document.getElementsByClassName('step-2')[0].style.display = "";
+    }
+
+    const buttons = document.querySelectorAll('.step-1 ul li > a');
+
+    buttons.forEach((elm) => elm.addEventListener("click", (e) => {
+      e.preventDefault();
+      buttons.forEach((elm) => elm.parentNode.classList.remove('active'));
+      e.target.parentNode.classList.add('active')
+      document.getElementsByClassName('score')[0].innerHTML = elm.dataset.rating
+    }));
+
+    const button = document.querySelector('button');
+
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      toggleStep();
+    });
+
+    document.getElementsByClassName('mask')[0].style.display = 'flex'
+
+  </script>
+</body>
+
+</html>
