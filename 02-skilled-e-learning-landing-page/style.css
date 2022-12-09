@@ -7,7 +7,9 @@ a {
 }
 
 body {
-	background-color: #FFF;
+  background-color: #FFF;
+  position:relative;
+  overflow-x: hidden;
 }
 
 .flex {
@@ -55,8 +57,6 @@ header {
 
 #courses > .container {
   flex-direction: column;
-  /*! align-content: center; */
-  /*! justify-content: center; */
 }
 
 .course-item.flex {
@@ -197,10 +197,6 @@ header {
 	#hero {
 		margin-bottom:50px;
 	}
-  .hero__image img {
-    /*! width:100%; */
-    /*! height:auto; */
-  }
 	
 	.flex.course-item {
 		margin-bottom:25px;
@@ -230,15 +226,13 @@ header {
   }
 }
 
-@media screen and (min-width: 768px and max-width: 1110px) {
+@media screen and (min-width: 768px) and (max-width: 1110px) {
 		.course-item.with-gradient {
 		  width:100%;
 	}
 }
 @media screen and (min-width: 768px) {
 	
-	#hero {
-	}
 	#courses > .container {
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -305,9 +299,6 @@ header {
 
   .hero__content{
     min-width:457px;
-  }
-
-  .hero__image {
   }
 
   .hero__image img {
