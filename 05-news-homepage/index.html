@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="build.css">
+</head>
+
+<body>
+
+  <div class="mask hidden"></div>
+  <header>
+    <div class="flex container space-around">
+      <a href="#">
+        <img src="img/logo.svg" alt="" />
+      </a>
+
+      <nav>
+        <button class="close-menu mobile-menu-toggle">
+          <img src="img/icon-menu-close.svg" alt="" />
+        </button>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">New</a></li>
+          <li class="active"><a href="#">Popular</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+      </nav>
+
+      <button class="mobile-menu-toggle sm-only">
+        <img src="img/icon-menu.svg" alt="" />
+
+      </button>
+  </header>
+
+  <section id="homepage">
+    <div class="flex container">
+      <article class="flex">
+        <div class="article-img">
+          <picture>
+            <source media="(min-width: 1110px)" srcset="img/image-web-3-desktop.jpg" />
+            <img class="responsive" src="img/image-web-3-mobile.jpg" alt="" />
+          </picture>
+        </div>
+
+        <div class="flex content">
+          <h2>The Bright Future of Web 3.0?</h2>
+          <div class="flex excerpt">
+            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the
+              hands of the people. But is it really fulfilling its promise?</p>
+            <a class="btn" href="#">Read More</a>
+          </div>
+        </div>
+      </article>
+
+      <aside>
+
+        <h3>Latest News</h3>
+
+        <ul>
+          <li><a href="#">Hydrogen VS Electric Cars</a>
+            Will hydrogen-fueled cars ever catch up to EVs?
+          </li>
+          <li><a href="#">Hydrogen VS Electric Cars</a>
+            Will hydrogen-fueled cars ever catch up to EVs?
+          </li>
+          <li><a href="#">Hydrogen VS Electric Cars</a>
+            Will hydrogen-fueled cars ever catch up to EVs?
+          </li>
+          <li><a href="#">Hydrogen VS Electric Cars</a>
+            Will hydrogen-fueled cars ever catch up to EVs?
+          </li>
+          <li><a href="#">Hydrogen VS Electric Cars</a>
+            Will hydrogen-fueled cars ever catch up to EVs?
+          </li>
+
+        </ul>
+
+      </aside>
+
+    </div>
+
+  </section>
+  <section id="articles">
+    <div class="flex container">
+      <div class="flex article-preview">
+        <div class="thumbnail">
+          <img class="responsive" src="img/image-retro-pcs.jpg" />
+        </div>
+        <div class="flex content">
+          <span>01</span>
+          <a href="#">Reviving Retro PCs</a>
+          <p>
+            What happens when old PCs are given modern upgrades?
+          </p>
+        </div>
+      </div>
+      <div class="flex article-preview">
+        <div class="thumbnail">
+          <img class="responsive" src="img/image-retro-pcs.jpg" />
+        </div>
+        <div class="flex content">
+          <span>01</span>
+          <a href="#">Reviving Retro PCs</a>
+          <p>
+            What happens when old PCs are given modern upgrades?
+          </p>
+        </div>
+      </div>
+      <div class="flex article-preview">
+        <div class="thumbnail">
+          <img class="responsive" src="img/image-retro-pcs.jpg" />
+        </div>
+        <div class="flex content">
+          <span>01</span>
+          <a href="#">Reviving Retro PCs</a>
+          <p>
+            What happens when old PCs are given modern upgrades?
+          </p>
+        </div>
+      </div>
+
+      <div class="flex article-preview">
+        <div class="thumbnail">
+          <img class="responsive" src="img/image-retro-pcs.jpg" />
+        </div>
+        <div class="flex content">
+          <span>01</span>
+          <a href="#">Reviving Retro PCs</a>
+          <p>
+            What happens when old PCs are given modern upgrades?
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <script>
+
+    (() => {
+
+      let in_transition = false;
+
+      const menuToggleButtons = document.querySelectorAll('.mobile-menu-toggle');
+
+      const toggleMenu = (e) => {
+
+        if (!in_transition) {
+          in_transition = true;
+
+          const nav = document.querySelector('nav');
+          const classes = nav.classList;
+
+
+          document.querySelector('.mask').classList.toggle('hidden');
+          nav.classList.toggle('active');
+          in_transition = false;
+        }
+
+      };
+
+      for (var i = 0; i < menuToggleButtons.length; i++) {
+        menuToggleButtons[i].addEventListener('click', (e) => toggleMenu(e));
+      }
+
+
+
+
+
+    })()
+  </script>
+
+
+</body>
+
+</html>
