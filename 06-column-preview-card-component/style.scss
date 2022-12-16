@@ -1,0 +1,104 @@
+$w-mobile: 375px;
+$w-desktop: 800px;
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyran: hsl(184, 100%, 22%);
+  --very-dark-cyran: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+}
+
+body {
+  font-size: 0.9375rem;
+  background-color: var(--transparent-white);
+  font-style: normal;
+  display: grid;
+  grid-template-columns: 1;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+@media (min-width: $w-desktop) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 920px;
+  }
+}
+
+h2 {
+  font-family: "Big Shoulders Display";
+  color: var(--transparent-white);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  line-height: 25px;
+  color: var(--transparent-white);
+  opacity: 0.75;
+}
+
+.item {
+  padding-left: 3.125rem;
+  padding-right: 3.125rem;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  border-radius: 8px;
+  justify-content: space-between;
+}
+
+.item:nth-child(1) {
+  background-color: var(--bright-orange);
+}
+
+.item:nth-child(2) {
+  @media (min-width: $w-desktop) {
+    left: -10px;
+    top: 0;
+  }
+  background-color: var(--dark-cyran);
+  top: -10px;
+}
+
+.item:nth-child(3) {
+  @media (min-width: $w-desktop) {
+    left: -20px;
+    top: 0;
+    width: calc(100% - 20px);
+  }
+  background-color: var(--very-dark-cyran);
+  top: -20px;
+}
+
+a {
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  line-height: 25px;
+  padding: 5px;
+  display: inline-block;
+  color: var(--transparent-white);
+  text-decoration: none;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  display: inline-flex;
+  justify-content: center;
+  &:hover {
+    background-color: var(--transparent-white);
+    color: var(--very-dark-cyran);
+  }
+}
