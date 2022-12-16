@@ -16,7 +16,6 @@ body {
   grid-template-columns: 1;
   justify-content: center;
   align-items: center;
-  width: 100vw;
   height: 100vh;
 }
 
@@ -75,7 +74,6 @@ p {
   @media (min-width: $w-desktop) {
     left: -20px;
     top: 0;
-    width: calc(100% - 20px);
   }
   background-color: var(--very-dark-cyran);
   top: -20px;
