@@ -56,8 +56,10 @@ img.responsive {
   opacity: 0.5;
 }
 .card .author {
+  border-top: 1px solid var(--white);
+  padding-top: 20px;
   display: flex;
-  gap: 8px;
+  gap: 15px;
   align-items: center;
 }
 .card .author a {
@@ -81,6 +83,10 @@ img.responsive {
 .card .author i {
   width: 33px;
   height: 33px;
+}
+.card .author i img {
+  border-radius: 50%;
+  border: 1px solid var(--white);
 }
 .card .meta {
   display: flex;
