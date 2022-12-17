@@ -6,6 +6,10 @@
   --grayish-Blue: hsl(246, 25%, 77%);
 }
 
+div[data-lastpass-icon-root] {
+  right: 10%;
+}
+
 $w-desktop: 800px;
 
 body {

@@ -6,6 +6,10 @@
   --grayish-Blue: hsl(246, 25%, 77%);
 }
 
+div[data-lastpass-icon-root] {
+  right: 10%;
+}
+
 body {
   font-size: 16px;
   background-color: var(--red);
