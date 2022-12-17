@@ -1,0 +1,172 @@
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --dark-Blue: hsl(249, 10%, 26%);
+  --grayish-Blue: hsl(246, 25%, 77%);
+}
+
+body {
+  font-size: 16px;
+  background-color: var(--red);
+  background-image: url(img/bg-intro-mobile.png);
+  background-position: -50px 0;
+  font-family: "Poppins";
+  font-style: normal;
+  color: #fff;
+}
+
+strong {
+  font-weight: 700;
+}
+
+main {
+  justify-items: center;
+  align-content: center;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+@media (min-width: 800px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+main .hero-right {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+main .content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (min-width: 800px) {
+  main .content {
+    justify-content: center;
+    text-align: left;
+    align-content: flex-start;
+  }
+  main .content h1,
+  main .content p {
+    text-align: left;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 525px;
+  }
+  main .content h1 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 55px;
+    letter-spacing: -0.520833px;
+  }
+}
+main .banner {
+  background: var(--blue);
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+  border-radius: 10px;
+  min-height: 88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: 0.267857px;
+}
+main .banner p {
+  max-width: 194px;
+}
+main h1 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
+}
+main p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+main p.error {
+  display: none;
+  text-align: right;
+  color: var(--red);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 16px;
+}
+main form {
+  background-color: #fff;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+  border-radius: 10px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+main form p {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 21px;
+  color: var(--grayish-Blue);
+}
+main form p a {
+  text-decoration: none;
+  color: var(--red);
+}
+main form p a:hover {
+  text-decoration: underline;
+}
+main form .submit-btn {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 26px;
+  background: #38cc8b;
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+  border-radius: 5px;
+  color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+}
+main form .submit-btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+main form .form-input {
+  width: 100%;
+}
+main form .form-input input {
+  width: 100%;
+}
+main form input {
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.25px;
+  color: #3d3b48;
+  height: 56px;
+  padding-left: 10px;
+}
+main form input.error {
+  background-image: url(img/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position-x: 98%;
+  background-position-y: 50%;
+  border: 1px solid var(--red) !important;
+}
+main form input.error + p {
+  display: block;
+}
+
+/*# sourceMappingURL=build.css.map */

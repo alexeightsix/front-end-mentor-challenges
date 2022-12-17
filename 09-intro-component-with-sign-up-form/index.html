@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>intro-component-with-signup-form</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="build.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" href="img/favicon-32x32.png" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <main class="container">
+    <div class="content">
+      <h1>Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but
+        understanding how developers think is invaluable. </p>
+    </div>
+    <div class="hero-right">
+      <div class="banner">
+        <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
+      </div>
+
+      <form id="trial-form" method="POST" action="/" class="form-container">
+        <div class="form-input">
+          <input tabindex="0" type="text" name="first-name" placeholder="First Name" value="" />
+          <p class="error">First Name cannot be empty</p>
+        </div>
+
+        <div class="form-input">
+          <input tabindex="1" type="text" name="last-name" placeholder="Last Name" value="" />
+          <p class="error">Last Name cannot be empty</p>
+        </div>
+        <div class="form-input">
+          <input tabindex="2" type="email" name="email" placeholder="Email Address" value="" />
+          <p class="error">Email cannot be empty or invalid</p>
+        </div>
+        <div class="form-input">
+          <input tabindex="3" type="password" name="password" placeholder="Pasword" value="" />
+          <p class="error">Password cannot be empty or weak</p>
+        </div>
+
+        <input type="submit" class="submit-btn" value="Claim your free trial" />
+        <p>
+          By clicking the button, you are agreeing to our <strong><a href="#">Terms and Services</a></strong>
+        </p>
+      </form>
+    </div>
+  </main>
+  <script type="text/javascript" src="app.js"></script>
+
+</body>
+
+</html>
