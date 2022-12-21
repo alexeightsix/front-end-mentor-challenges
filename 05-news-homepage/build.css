@@ -134,6 +134,9 @@ nav ul {
     flex-direction: row;
   }
 }
+nav ul li.active a {
+  color: var(--c-soft-red);
+}
 nav ul li a {
   text-decoration: none;
   color: var(--c-very-dark-blue);
@@ -192,7 +195,7 @@ nav ul li a:hover {
   line-height: 26px;
   color: var(--c-off-white);
   margin-bottom: 20px;
-  border-bottom: 1px solid var(--c-off-white);
+  border-bottom: 1px solid #5e607a;
   border-width: thin;
 }
 #homepage .container aside ul li a {
