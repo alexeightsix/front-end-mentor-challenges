@@ -375,3 +375,11 @@ footer div>a {
 	align-content: center;
 	line-height: 42px;
 }
+
+@media only screen and (max-width:768px) {
+#courses .container {
+    margin-bottom:25px;
+    gap:25px;
+}
+}
+
