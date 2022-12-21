@@ -76,13 +76,9 @@ img.responsive {
 
 .card {
   box-shadow: 0.0625rem 2.5rem 2.5rem -1.25rem rgba(13, 48, 189, 0.151826);
+  max-width: 28.125rem;
   margin-left: 5%;
   margin-right: 5%;
-}
-@media (min-width: 30.5rem) {
-  .card {
-    width: 28.125rem;
-  }
 }
 
 .card-container {

@@ -39,14 +39,13 @@ main {
   padding-top: 0.4375rem;
   padding-bottom: 0.4375rem;
   padding-right: 3.125rem;
- 
+
   @media (min-width: 30.5rem) {
     padding-left: 6.375rem;
     padding-top: 0.9375rem;
     padding-bottom: 0.9375rem;
     padding-right: 6.375rem;
   }
-
 
   display: inline-flex;
   justify-content: center;
@@ -79,12 +78,9 @@ img.responsive {
 
 .card {
   box-shadow: 0.0625rem 2.5rem 2.5rem -1.25rem rgba(13, 48, 189, 0.151826);
-  // width: 28.125rem;
+  max-width: 28.125rem;
   margin-left: 5%;
   margin-right: 5%;
-  @media (min-width: 30.5rem) {
-    width: 28.125rem;
-  }
 }
 
 .card-container {
