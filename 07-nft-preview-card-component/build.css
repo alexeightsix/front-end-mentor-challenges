@@ -30,8 +30,10 @@ img.responsive {
 }
 
 .card {
+  margin-left: 5%;
+  margin-right: 5%;
   padding: 25px;
-  width: 327px;
+  max-width: 327px;
   background-color: var(--very-dark-blue-card-bg);
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
   border-radius: 15px;
