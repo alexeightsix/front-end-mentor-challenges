@@ -1,0 +1,6 @@
+*.sh*
+*package.json* 
+*package-lock*
+*node_modules*
+*.md*
+Z-template

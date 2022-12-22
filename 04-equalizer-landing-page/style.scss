@@ -3,7 +3,7 @@
   @return $remValue;
 }
 
-$w-desktop: toRem(1440);
+$w-desktop: toRem(1110);
 $w-tablet: toRem(768);
 $w-mobile: toRem(375);
 
@@ -20,7 +20,7 @@ $w-mobile: toRem(375);
 
 .container {
   width: 90%;
-  max-width: toRem(1440);
+  max-width: 1110px;
   margin: 0 auto;
   padding-left: 5%;
   padding-right: 5%;
@@ -190,7 +190,7 @@ header {
       }
 
       @media (min-width: $w-desktop) {
-        max-width: 900px;
+        max-width: 800px;
       }
     }
   }
@@ -320,8 +320,6 @@ footer {
         color: var(--black);
       }
 
-      // width:600px;
-      // max-width:366px;
       font-size: 1rem;
       line-height: 1.625rem;
     }
