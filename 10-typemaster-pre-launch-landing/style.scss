@@ -1,0 +1,261 @@
+:root {
+  --orange: #f16718;
+  --orange-light: #ff9b62;
+  --blue: #162542;
+  --blue-light: #7b8bad;
+  --blue-lighter: #e8eff2;
+  --white: #fff;
+}
+
+$w-tablet: 768px;
+$w-desktop: 1110px;
+$w-mobile: 380px;
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--blue-light);
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  color: var(--blue);
+}
+h1 {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+}
+
+h3 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.btn {
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px;
+  &.primary {
+    background: var(--orange);
+    color: var(--white);
+    &:hover {
+      background-color: var(--orange-light);
+    }
+  }
+  &.secondary {
+    background: var(--blue-lighter);
+    color: var(--blue);
+    &:hover {
+      background-color: var(--blue);
+      color: #fff;
+    }
+  }
+}
+
+.container {
+  max-width: $w-desktop;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: 0 auto;
+}
+
+header {
+  .container {
+    .logo {
+      position: relative;
+      top: 5px;
+    }
+
+    display: grid;
+    grid-template-columns: 1fr 0fr;
+    padding-top: 20px;
+    margin-bottom: 62px;
+    .btn-container {
+      width: 152px;
+      height: 48px;
+    }
+    .btn {
+      padding: 15px;
+    }
+  }
+}
+
+#hero {
+  margin-bottom: 25px;
+  .container {
+    @media (min-width: 668px) {
+      display: grid;
+      grid-template-columns: 445px 1fr;
+    }
+
+    .hero__image {
+      img {
+        translate: 6%;
+        border-radius: 20px;
+      }
+    }
+    .hero__content {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      margin-bottom: 25px;
+
+      justify-content: center;
+      .hero__description {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+      }
+
+      .hero__cta {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-transform: uppercase;
+        @media (min-width: $w-desktop) {
+          justify-content: flex-start;
+          gap: 10px;
+        }
+        p {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+}
+
+#product_images .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: $w-desktop) {
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
+
+  .product-description {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 25px;
+
+    @media (min-width: $w-tablet) {
+      flex-direction: row;
+      text-align: left;
+    }
+
+    @media (min-width: $w-desktop) {
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      min-width: 350px;
+    }
+  }
+
+  .product-image:first-child {
+    width: 35.5%;
+    position: relative;
+    left: -6%;
+
+    @media (min-width: $w-tablet) {
+      position: static;
+      width: 29%;
+    }
+
+    img {
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+  }
+
+  .product-image:nth-of-type(2) {
+    width: 60%;
+    img {
+      border-radius: 20px;
+    }
+  }
+
+  margin-bottom: 25px;
+}
+
+#features .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 25px;
+
+  @media (min-width: $w-tablet) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $w-desktop) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+.features__feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+
+  @media (min-width: $w-tablet) {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  i {
+    background: var(--orange);
+    border-radius: 16px;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 25px;
+      height: 26px;
+    }
+  }
+}
+
+footer {
+  .container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+}
