@@ -7,12 +7,15 @@
 }
 
 div[data-lastpass-icon-root] {
-  right: 10%;
+  display: none;
 }
 
 $w-desktop: 800px;
 
 body {
+  @media (max-width: $w-desktop) {
+    padding-top: 50px;
+  }
   font-size: 16px;
   background-color: var(--red);
   background-image: url(img/bg-intro-mobile.png);
@@ -84,8 +87,8 @@ main {
     letter-spacing: 0.267857px;
     p {
       max-width: 194px;
-      @media(min-width: $w-desktop) {
-max-width: 100%;
+      @media (min-width: $w-desktop) {
+        max-width: 100%;
       }
     }
   }
