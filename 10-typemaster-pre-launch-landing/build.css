@@ -84,7 +84,7 @@ h3 {
 header .container {
   display: grid;
   grid-template-columns: 1fr 0fr;
-  padding-top: 20px;
+  padding-top: 50px;
   margin-bottom: 62px;
 }
 header .container .logo {
@@ -102,14 +102,14 @@ header .container .btn {
 #hero {
   margin-bottom: 25px;
 }
-@media (min-width: 668px) {
+@media (min-width: 854px) {
   #hero .container {
     display: grid;
+    gap: 50px;
     grid-template-columns: 445px 1fr;
   }
 }
 #hero .container .hero__image img {
-  translate: 6%;
   border-radius: 20px;
 }
 #hero .container .hero__content {
@@ -147,7 +147,7 @@ header .container .btn {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
 }
 @media (min-width: 1110px) {
   #product_images .container {
@@ -204,7 +204,7 @@ header .container .btn {
   align-content: center;
   justify-content: center;
   gap: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
 }
 @media (min-width: 768px) {
   #features .container {
@@ -248,7 +248,7 @@ footer .container {
   display: flex;
   align-content: center;
   justify-content: center;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
 }
 
 /*# sourceMappingURL=build.css.map */
