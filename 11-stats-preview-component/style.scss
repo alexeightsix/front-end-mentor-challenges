@@ -23,7 +23,6 @@ body {
 }
 
 main {
-  max-width: 500px;
   .stats {
     @media (min-width: $w-desktop) {
       width: 100%;
@@ -65,7 +64,8 @@ main {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
-
+  max-width: 500px;
+  margin-top: 5%;
   @media (min-width: $w-desktop) {
     grid-template-columns: 1fr 1fr;
     max-width: 1110px;
@@ -81,6 +81,7 @@ main {
   }
 
   .right img {
+    display: block;
     mix-blend-mode: multiply;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
