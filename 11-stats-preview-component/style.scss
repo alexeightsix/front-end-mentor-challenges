@@ -77,7 +77,13 @@ main {
   padding-left: 5%;
   padding-right: 5%;
 
+  .mask {
+    background-color: #ab5cdb;
+    opacity: 0.7;
+  }
+
   .right img {
+    mix-blend-mode: multiply;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 
