@@ -1,0 +1,111 @@
+body {
+  position: relative;
+  background-color: #19a1ae;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  font-style: normal;
+  font-family: "Kumbh Sans", sans-serif;
+  align-content: center;
+}
+
+body::before {
+  background-image: url(img/bg-pattern-top.svg);
+  top: -25%;
+  left: -60%;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  position: absolute;
+  content: "";
+  transform: rotate(160deg);
+}
+
+body::after {
+  background-image: url(img/bg-pattern-bottom.svg);
+  bottom: -25%;
+  right: -50%;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  position: absolute;
+  content: "";
+}
+
+main {
+  z-index: 100;
+  margin-top: 5%;
+  background-color: #fff;
+  margin: 0 auto;
+  box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.504835);
+  border-radius: 15px;
+  background-image: url(img/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 30%;
+  position: relative;
+  width: 300px;
+  height: 374px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+main .avatar {
+  height: 30%;
+  width: 100%;
+  position: relative;
+}
+main .author {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 5px;
+}
+main .author h1 {
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: #2e3349;
+}
+main span {
+  color: #6b7082;
+  font-family: "Kumbh Sans";
+  font-weight: 400;
+  font-size: 14px;
+}
+@media (min-width: 350px) {
+  main {
+    width: 350px;
+  }
+}
+main picture {
+  position: absolute;
+  top: 35%;
+  left: calc(50% - 48px);
+}
+main picture img {
+  border-radius: 50%;
+  border: 1px solid white;
+}
+main ul {
+  text-transform: uppercase;
+  display: flex;
+  width: 100%;
+}
+main ul li {
+  font-weight: 700;
+  font-size: 18px;
+  color: #2e3349;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  gap: 5px;
+  align-items: center;
+}
+main ul li span {
+  text-transform: initial;
+}
+
+/*# sourceMappingURL=build.css.map */
