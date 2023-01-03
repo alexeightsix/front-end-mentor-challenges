@@ -6,6 +6,7 @@ body {
   grid-template-columns: 1fr;
   font-style: normal;
   font-family: "Kumbh Sans", sans-serif;
+  overflow: hidden;
   align-content: center;
 }
 
